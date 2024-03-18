@@ -168,7 +168,7 @@ fun ButtonToShowOrHideNumPad(setShowNumPad: (Boolean) -> Unit) {
         }
     }
 }
-//now there is a button to show keyboard,
+//now there is a button to show keyboard, and click anywhere to hide keyboard
 // (instead of "adding record" which would be created later).
 // Add button is not ready
 
