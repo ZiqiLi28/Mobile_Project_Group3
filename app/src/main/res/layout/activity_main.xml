@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,14 +18,16 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            />
+            tools:ignore="RelativeOverlap" />
         <ImageView
+            android:id="@+id/main_iv_search"
             android:layout_height="match_parent"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_search"
+            android:onClick="onClick"
             android:layout_alignParentEnd="true"
             android:padding="10dp"
-            />
+            android:contentDescription="TODO" />
     </RelativeLayout>
     <ListView
         android:id="@+id/main_lv"
@@ -44,9 +47,10 @@
         android:src="@drawable/ic_more"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:onClick="onClick"
         android:layout_margin="20dp"
         android:background="@drawable/main_more_bg"
-        />
+        android:contentDescription="TODO" />
     <Button
         android:id="@+id/main_btn_edit"
         android:layout_width="100dp"
@@ -54,9 +58,10 @@
         android:layout_alignBottom="@id/main_btn_more"
         android:background="@drawable/main_recordbtn_bg"
         android:layout_toStartOf="@id/main_btn_more"
+        android:onClick="onClick"
         android:text="@string/add"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:drawableStart="@drawable/ic_edit"
         android:gravity="center_vertical"/>
 </RelativeLayout>

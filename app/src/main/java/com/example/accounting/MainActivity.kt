@@ -1,47 +1,26 @@
 package com.example.accounting
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.accounting.ui.theme.AccountingTheme
-import com.example.accounting.utils.MyComposable
+import android.content.Intent
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            AccountingTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    MyComposable()
-                }
+        setContentView(R.layout.activity_main)
+    }
+
+    fun onClick(view: View) {
+        when (view.id) {
+            R.id.main_iv_search -> {
+            }
+            R.id.main_btn_edit -> {
+                val it1 = Intent(this@MainActivity, RecordActivity::class.java)
+                startActivity(it1)
+            }
+            R.id.main_btn_more -> {
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AccountingTheme {
-        Greeting("Android")
     }
 }
