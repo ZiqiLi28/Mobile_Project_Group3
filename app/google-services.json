@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "72216296144",
+    "project_id": "fir-authentication-376c7",
+    "storage_bucket": "fir-authentication-376c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72216296144:android:257591e62a610423463cd5",
+        "android_client_info": {
+          "package_name": "com.example.accounting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqHiu3CNE44AueXL6Am4LgnejZYGhT63Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72216296144:android:b07ba58f38b11a89463cd5",
+        "android_client_info": {
+          "package_name": "com.example.firebaseauthentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqHiu3CNE44AueXL6Am4LgnejZYGhT63Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72216296144:android:d2f9e066bb42aa1b463cd5",
+        "android_client_info": {
+          "package_name": "com.example.lessontemplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqHiu3CNE44AueXL6Am4LgnejZYGhT63Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
