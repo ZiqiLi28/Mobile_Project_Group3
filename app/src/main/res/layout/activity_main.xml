@@ -91,7 +91,7 @@
         android:layout_alignBottom="@id/main_btn_more"
         android:layout_toLeftOf="@id/main_btn_more"
 
-        android:background="@drawable/main_recordbtn2_bg"
+        android:background="@drawable/main_recordbtn_bg"
         android:drawableLeft="@mipmap/edit"
         android:gravity="center"
         android:padding="15dp"
