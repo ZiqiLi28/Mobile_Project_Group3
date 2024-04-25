@@ -3,20 +3,21 @@ package com.example.accounting.frag_record
 import android.annotation.SuppressLint
 import com.example.accounting.R
 import com.example.accounting.db.DBManager
+import com.example.accounting.db.TypeBean
 
-class OutcomeFragment : BaseRecordFragment() {
+class IncomeFragment : BaseRecordFragment() {
     @SuppressLint("SetTextI18n")
     override fun loadDataGV() {
         super.loadDataGV()
-        val outlist = DBManager.getTypeList(0)
-        typeList.addAll(outlist)
+        val inlist: List<TypeBean> = DBManager.getTypeList(1)
+        typeList.addAll(inlist)
         adapter.notifyDataSetChanged()
         typeTv.text = "Other"
-        typeIv.setImageResource(R.mipmap.ic_qita_fs)
+        typeIv.setImageResource(R.mipmap.in_qt_fs)
     }
 
     override fun saveAccountToDB() {
-        accountBean.kind = 0
+        accountBean.kind = 1
         DBManager.insertItemToAccounttb(accountBean)
     }
 }
