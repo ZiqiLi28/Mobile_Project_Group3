@@ -9,8 +9,7 @@ It is a financial management app developed using Kotlin. It's designed to help u
 
 ## Technology Architecture
 
-For the user interface:
-
+  For the user interface:
 - **Model-View-ViewModel (MVVM) Architecture**
 - **Jetpack Compose**
   For backend services:
@@ -45,6 +44,38 @@ For the user interface:
 2. Open the project in Android Studio.
 
 3. Run the app either on an Android emulator or a physical Android device connected to your computer.
+
+## Division of Work
+
+**Minyi Zhang:**
+
+1. Layout Design:
+   Designing and implementing the overall UI/UX of the app.
+   Creating layouts for different screens and user interactions.
+2. Fragments
+   Implementing chart related fragments.
+   Implementing fragments for expense and income.
+3. Adapters
+   Developing and managing adapters for displaying data in lists or grids.
+
+**Lufei Wu:**
+
+1. Utility Classes:
+   Creating utility classes for common functionalities and reusable code.
+2. Account Management with Firebase
+   Integrating Firebase for user authentication and account management.
+   Setting up user registration, login, and profile management functionalities using Firebase.
+3. Fragments
+   Working on records fragments, integrating the expense and income fragment, managing the record types for the transactions.
+
+**Ziqi Li:**
+
+1. Page Functions
+   Implementing various page functions, mainly the activities on home page.
+2. Database Management
+   Setting up and managing the app's database.
+   Implementing CRUD (Create, Read, Update, Delete) operations for data persistence.
+   Ensuring data integrity and security in the database.
 
 ## License
 
