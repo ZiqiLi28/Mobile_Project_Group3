@@ -71,7 +71,7 @@ It is a financial management app developed using Kotlin. It's designed to help u
 **Ziqi Li:**
 
 1. Page Functions
-   Implementing various page functions, mainly the activities on home page.
+   Implementing various page functions, mainly the activities on home page and record pages.
 2. Database Management
    Setting up and managing the app's database.
    Implementing CRUD (Create, Read, Update, Delete) operations for data persistence.
